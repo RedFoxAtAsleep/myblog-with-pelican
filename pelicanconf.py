@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'zhjh'
 SITENAME = 'crimson'
-SITEURL = ''
+SITEURL = 'https://redfoxatasleep.github.io/myblog-with-pelican'
 
 PATH = 'content'
 
