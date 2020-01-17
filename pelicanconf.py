@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = 'zhjh'
 SITENAME = 'crimson'
-# SITEURL = ''
-THEME = 'theme/notmyidea'
+SITEURL = 'https://redfoxatasleep.github.io/myblog-with-pelican'
+THEME = 'theme/semantic'
 
 PATH = 'content'
 
