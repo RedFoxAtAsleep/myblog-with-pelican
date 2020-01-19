@@ -27,15 +27,30 @@
         </address>
 <p>In <a href="https://redfoxatasleep.github.io/myblog-with-pelican/category/memo.html">memo</a>.</p>
 <p>tags: <a href="https://redfoxatasleep.github.io/myblog-with-pelican/tag/linux.html">linux</a> </p>
-</footer><!-- /.post-info --><h3>解压和压缩</h3>
+</footer><!-- /.post-info --><p><img alt="image" src="https://redfoxatasleep.github.io/myblog-with-pelican/handpaint0001.jpg"></p>
+<h3>解压和压缩</h3>
+<h4>tar命令和参数</h4>
 <div class="highlight"><pre><span></span>tar -zxvf filename.tar.gz  
 tar -jxvf filename.tar.bz2  
 tar -Jxvf filename.tar.xz
 tar -Zxvf filename.tar.Z
 <span class="c1"># 从1.15版本开始，tar就可以自动识别压缩的格式</span>
 tar -xvf filename.tar.*
+</pre></div>
 
-unzip filename.zip
+
+<div class="highlight"><pre><span></span><span class="c1"># 必须的参数，三选一</span>
+-c --create: 创建压缩文件，create
+-x --extract --get: 解压缩文件，extract
+-t --list: 查看压缩包里面的文件，list
+
+<span class="c1"># 可选参数</span>
+-v --verbose: 显示压缩/解压缩的进度条，显示指令执行过程
+-f --file: 指定备份文件，即-f &lt;file&gt;
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>unzip filename.zip
 
 gunzip FileName.gz
 gzip -d FileName.gz
@@ -48,12 +63,13 @@ bunzip2 FileName.bz
 bzip2 -d FileName.bz
 
 uncompress FileName.Z
-compress FileName
+compress FileName  <span class="c1"># 压缩</span>
 </pre></div>
 
 
 <p>参考：
-<a href="https://www.cnblogs.com/cursorhu/p/5891699.html">Linux下的解压命令小结</a></p>                </article>
+<a href="https://www.cnblogs.com/cursorhu/p/5891699.html">Linux下的解压命令小结</a>
+<a href="https://www.cnblogs.com/eoiioe/archive/2008/09/20/1294681.html">linux下解压命令大全</a></p>                </article>
             </aside><!-- /#featured -->
         <section id="extras" class="body">
                 <div class="blogroll">
