@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'zhjh'
 SITENAME = 'crimson'
 SITEURL = 'https://redfoxatasleep.github.io/myblog-with-pelican'
-THEME = 'theme/semantic'
+THEME = 'theme/notmyidea'
 
 PATH = 'content'
 
