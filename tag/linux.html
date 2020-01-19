@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>crimson - Categories</title>
+        <title>crimson - linux</title>
         <link rel="stylesheet" href="https://redfoxatasleep.github.io/myblog-with-pelican/theme/css/main.css" />
 </head>
 
@@ -13,10 +13,48 @@
                     <li><a href="https://redfoxatasleep.github.io/myblog-with-pelican/category/memo.html">memo</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
-    <h1>Categories on crimson</h1>
-    <ul>
-        <li><a href="https://redfoxatasleep.github.io/myblog-with-pelican/category/memo.html">memo</a> (2)</li>
-    </ul>
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="https://redfoxatasleep.github.io/myblog-with-pelican/202001171653.html">解压和压缩</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2020-01-17T16:55:00+08:00">
+                Published: 五 17 一月 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://redfoxatasleep.github.io/myblog-with-pelican/author/zhjh.html">zhjh</a>
+        </address>
+<p>In <a href="https://redfoxatasleep.github.io/myblog-with-pelican/category/memo.html">memo</a>.</p>
+<p>tags: <a href="https://redfoxatasleep.github.io/myblog-with-pelican/tag/linux.html">linux</a> </p>
+</footer><!-- /.post-info --><h3>解压和压缩</h3>
+<div class="highlight"><pre><span></span>tar -zxvf filename.tar.gz  
+tar -jxvf filename.tar.bz2  
+tar -Jxvf filename.tar.xz
+tar -Zxvf filename.tar.Z
+<span class="c1"># 从1.15版本开始，tar就可以自动识别压缩的格式</span>
+tar -xvf filename.tar.*
+
+unzip filename.zip
+
+gunzip FileName.gz
+gzip -d FileName.gz
+
+bunzip2 FileName.bz2
+bzip2 -d FileName.bz2
+bzip2 -z FileName  <span class="c1"># 压缩</span>
+
+bunzip2 FileName.bz
+bzip2 -d FileName.bz
+
+uncompress FileName.Z
+compress FileName
+</pre></div>
+
+
+<p>参考：
+<a href="https://www.cnblogs.com/cursorhu/p/5891699.html">Linux下的解压命令小结</a></p>                </article>
+            </aside><!-- /#featured -->
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>links</h2>
