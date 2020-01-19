@@ -13,11 +13,6 @@ TIMEZONE = 'Asia/Shanghai'
 
 DEFAULT_LANG = 'en'
 
-# Static paths
-STATIC_PATHS = [
-    'content/images'
-]
-
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
