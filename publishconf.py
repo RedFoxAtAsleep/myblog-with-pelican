@@ -11,7 +11,9 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-SITEURL = 'https://redfoxatasleep.github.io/myblog-with-pelican'
+# SITEURL = 'https://redfoxatasleep.github.io/myblog-with-pelican'
+with open('CNAME') as f:
+    SITEURL = f.read()
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
