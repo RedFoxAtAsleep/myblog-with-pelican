@@ -17,7 +17,6 @@ TIMEZONE = 'Asia/Shanghai'
 
 DEFAULT_LANG = 'en'
 
-
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -41,8 +40,38 @@ DEFAULT_PAGINATION = 10
 # RELATIVE_URLS = True
 
 # Markdown Extension
-# MD_EXTENSIONS = []
+# Markdown扩展
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        'markdown.extensions.tables': {  # 表格
+        },
+        'markdown.extensions.toc': {  # 目录，设置看https://python-markdown.github.io/extensions/toc/
+            'title': 'TOC:',  # 目录题头
+            'toc_depth': 8,
+        },
+    },
+    'output_format': 'html5',
+}
 
 # Plugins
-PLUGIN_PATHS = ['plugins',]
-PLUGINS = ['neighbors', 'sitemap', 'pelican-toc']
+PLUGIN_PATHS = ['plugins', ]
+PLUGINS = ['neighbors', 'sitemap']
+
+# Plugin sitemap
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'weekly',
+        'indexes': 'daily',
+        'pages': 'weekly'
+    }
+}
+
