@@ -4,9 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'zhjh'
 SITENAME = 'crimson'
-with open('CNAME') as f:
-    SITEURL = f.read()
-# SITEURL = 'https://redfoxatasleep.github.io/myblog-with-pelican'
+SITEURL = 'https://redfoxatasleep.github.io/myblog-with-pelican'
 THEME = 'theme/notmyidea'
 
 PATH = 'content'
