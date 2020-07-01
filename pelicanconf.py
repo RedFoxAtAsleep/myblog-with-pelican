@@ -41,4 +41,8 @@ DEFAULT_PAGINATION = 10
 # RELATIVE_URLS = True
 
 # Markdown Extension
-MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'toc(permalink=true)']
+# MD_EXTENSIONS = []
+
+# Plugins
+PLUGIN_PATHS = ['plugins',]
+PLUGINS = ['neighbors', 'sitemap', 'pelican-toc']
