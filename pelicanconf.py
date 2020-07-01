@@ -8,6 +8,9 @@ SITEURL = 'https://redfoxatasleep.github.io/myblog-with-pelican'
 THEME = 'theme/notmyidea'
 
 PATH = 'content'
+# PAGE_PATHS
+# ARTICLE_PATHS
+STATIC_PATHS = ['images']
 
 TIMEZONE = 'Asia/Shanghai'
 
